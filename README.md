@@ -1,5 +1,6 @@
 ## 8.2 Majestic Thai API
 
+### JSON Template
 {
   id: #,
   englishName: 'Thai',
@@ -8,8 +9,9 @@
   description: 'Lorem ipsum dolor sit amet.',
   imageSrc: 'images/dish-#',
   price: #
-},
+}
 
+### JSON Preview
 [{
   id: 1,
   englishName: 'Pad Thai',
