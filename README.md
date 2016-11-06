@@ -1,4 +1,4 @@
-## 8.2 Majestic Thai API
+# 8.2 Majestic Thai API
 
 ### JSON Template
 {
