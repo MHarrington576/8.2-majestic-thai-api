@@ -1,55 +1,94 @@
 FORMAT: 1A
 HOST: http://polls.apiblueprint.org/
 
-# MajesticThai
+# Majestic Thai API
 
-Polls is a simple API allowing consumers to view polls and vote in them.
-
-## Questions Collection [/questions]
-
-### List All Questions [GET]
+### List All Dishes [GET]
 
 + Response 200 (application/json)
 
         [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
-            }
+            {   id: 1,
+                englishName: 'Pad Thai',
+                thaiName: 'Phat thai',
+                dishType: 'noodle',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-1',
+                price: 11.5 },
+
+            {   id: 2,
+                englishName: 'Drunken Noodles',
+                thaiName: 'Pad kee mao',
+                dishType: 'noodle',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-2',
+                price: 11 },
+            
+            {   id: 3,
+                englishName: 'Meat and Broccoli Sauté',
+                thaiName: 'Rad na',
+                dishType: 'rice',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-3',
+                price: 12.5 },
+            
+            {   id: 4,
+                englishName: 'Curry Egg Noodles',
+                thaiName: 'Khao soi',
+                dishType: 'noodle',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-4',
+                price: 11 },
+            
+            {   id: 5,
+                englishName: 'Hot and Sour Shrimp Soup',
+                thaiName: 'Tom yum',
+                dishType: 'side',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-5',
+                price: 6.5 },
+            
+            {   id: 6,
+                englishName: 'Thai Grilled Chicken',
+                thaiName: 'Gai yang',
+                dishType: 'rice',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-6',
+                price: 11.5 },
+            
+            {   id: 7,
+                englishName: 'Dry Pork Curry',
+                thaiName: 'Mu phat phrik khing',
+                dishType: 'rice',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-7',
+                price: 9 },
+            
+            {   id: 8,
+                englishName: 'Yellow Curry',
+                thaiName: 'Kaeng kari',
+                dishType: 'rice',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-8',
+                price: 12 },
+            
+            {   id: 9,
+                englishName: 'Sweet Rice and Shrimp',
+                thaiName: 'Mi krop',
+                dishType: 'side',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-9',
+                price: 8.5 },
+            
+            {   id: 10,
+                englishName: 'Red Curry with Coconut Milk',
+                thaiName: 'Phanaeng',
+                dishType: 'rice',
+                description: 'Lorem ipsum dolor sit amet.',
+                imageSrc: 'images/dish-10',
+                price: 10.5 }
         ]
 
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ Request (application/json)
-
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
 
 + Response 201 (application/json)
 
@@ -59,7 +98,7 @@ form of choices.
 
     + Body
 
-            {
+            ed{
                 "question": "Favourite programming language?",
                 "published_at": "2015-08-05T08:40:51.620Z",
                 "choices": [
