@@ -12,7 +12,9 @@
 }
 
 ### JSON Preview
-[{
+[
+
+{
   id: 1,
   englishName: 'Pad Thai',
   thaiName: 'Phat thai',
@@ -110,6 +112,6 @@
   description: 'Lorem ipsum dolor sit amet.',
   imageSrc: 'images/dish-10',
   price: 10.5
-},
+}
 
 ]
